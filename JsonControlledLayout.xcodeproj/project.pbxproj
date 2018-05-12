@@ -15,9 +15,8 @@
 		265FDA2620A60F2600A543C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA2520A60F2600A543C2 /* main.m */; };
 		265FDA3020A60F2600A543C2 /* JsonControlledLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA2F20A60F2600A543C2 /* JsonControlledLayoutTests.m */; };
 		265FDA3B20A60F2600A543C2 /* JsonControlledLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA3A20A60F2600A543C2 /* JsonControlledLayoutUITests.m */; };
-		265FDA4A20A6DB4E00A543C2 /* KVCMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA4920A6DB4E00A543C2 /* KVCMapper.m */; };
-		265FDA5020A6F22D00A543C2 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA4F20A6F22D00A543C2 /* DataFetcher.m */; };
-		265FDA5320A6F60300A543C2 /* KVCLayoutFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */; };
+		26EC0A1520A7505200004E8F /* KVCLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EC0A1220A7504800004E8F /* KVCLayout.framework */; };
+		26EC0A1620A7505200004E8F /* KVCLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26EC0A1220A7504800004E8F /* KVCLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,42 @@
 			remoteGlobalIDString = 265FDA1220A60F2100A543C2;
 			remoteInfo = JsonControlledLayout;
 		};
+		26EC0A1120A7504800004E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 265FDA5E20A7377500A543C2;
+			remoteInfo = KVCLayout;
+		};
+		26EC0A1320A7504800004E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 265FDA6720A7377600A543C2;
+			remoteInfo = KVCLayoutTests;
+		};
+		26EC0A1720A7505200004E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 265FDA5D20A7377500A543C2;
+			remoteInfo = KVCLayout;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26EC0A1920A7505300004E8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26EC0A1620A7505200004E8F /* KVCLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		265FDA1320A60F2100A543C2 /* JsonControlledLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonControlledLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,12 +88,7 @@
 		265FDA3620A60F2600A543C2 /* JsonControlledLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonControlledLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		265FDA3A20A60F2600A543C2 /* JsonControlledLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonControlledLayoutUITests.m; sourceTree = "<group>"; };
 		265FDA3C20A60F2600A543C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		265FDA4820A6DB4E00A543C2 /* KVCMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCMapper.h; sourceTree = "<group>"; };
-		265FDA4920A6DB4E00A543C2 /* KVCMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCMapper.m; sourceTree = "<group>"; };
-		265FDA4E20A6F22D00A543C2 /* DataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFetcher.h; sourceTree = "<group>"; };
-		265FDA4F20A6F22D00A543C2 /* DataFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataFetcher.m; sourceTree = "<group>"; };
-		265FDA5120A6F60200A543C2 /* KVCLayoutFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCLayoutFacade.h; sourceTree = "<group>"; };
-		265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCLayoutFacade.m; sourceTree = "<group>"; };
+		26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KVCLayout.xcodeproj; path = KVCLayout/KVCLayout.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EC0A1520A7505200004E8F /* KVCLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +120,7 @@
 		265FDA0A20A60F2100A543C2 = {
 			isa = PBXGroup;
 			children = (
+				26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */,
 				265FDA1520A60F2100A543C2 /* JsonControlledLayout */,
 				265FDA2E20A60F2600A543C2 /* JsonControlledLayoutTests */,
 				265FDA3920A60F2600A543C2 /* JsonControlledLayoutUITests */,
@@ -114,12 +145,6 @@
 				265FDA1720A60F2100A543C2 /* AppDelegate.m */,
 				265FDA1920A60F2100A543C2 /* ViewController.h */,
 				265FDA1A20A60F2100A543C2 /* ViewController.m */,
-				265FDA5120A6F60200A543C2 /* KVCLayoutFacade.h */,
-				265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */,
-				265FDA4820A6DB4E00A543C2 /* KVCMapper.h */,
-				265FDA4920A6DB4E00A543C2 /* KVCMapper.m */,
-				265FDA4E20A6F22D00A543C2 /* DataFetcher.h */,
-				265FDA4F20A6F22D00A543C2 /* DataFetcher.m */,
 				265FDA1C20A60F2100A543C2 /* Main.storyboard */,
 				265FDA1F20A60F2600A543C2 /* Assets.xcassets */,
 				265FDA2120A60F2600A543C2 /* LaunchScreen.storyboard */,
@@ -147,6 +172,15 @@
 			path = JsonControlledLayoutUITests;
 			sourceTree = "<group>";
 		};
+		26EC0A0D20A7504800004E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EC0A1220A7504800004E8F /* KVCLayout.framework */,
+				26EC0A1420A7504800004E8F /* KVCLayoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +191,12 @@
 				265FDA0F20A60F2100A543C2 /* Sources */,
 				265FDA1020A60F2100A543C2 /* Frameworks */,
 				265FDA1120A60F2100A543C2 /* Resources */,
+				26EC0A1920A7505300004E8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				26EC0A1820A7505200004E8F /* PBXTargetDependency */,
 			);
 			name = JsonControlledLayout;
 			productName = JsonControlledLayout;
@@ -236,6 +272,12 @@
 			mainGroup = 265FDA0A20A60F2100A543C2;
 			productRefGroup = 265FDA1420A60F2100A543C2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26EC0A0D20A7504800004E8F /* Products */;
+					ProjectRef = 26EC0A0C20A7504800004E8F /* KVCLayout.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				265FDA1220A60F2100A543C2 /* JsonControlledLayout */,
@@ -244,6 +286,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26EC0A1220A7504800004E8F /* KVCLayout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KVCLayout.framework;
+			remoteRef = 26EC0A1120A7504800004E8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26EC0A1420A7504800004E8F /* KVCLayoutTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KVCLayoutTests.xctest;
+			remoteRef = 26EC0A1320A7504800004E8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		265FDA1120A60F2100A543C2 /* Resources */ = {
@@ -279,10 +338,7 @@
 			files = (
 				265FDA1B20A60F2100A543C2 /* ViewController.m in Sources */,
 				265FDA2620A60F2600A543C2 /* main.m in Sources */,
-				265FDA5320A6F60300A543C2 /* KVCLayoutFacade.m in Sources */,
 				265FDA1820A60F2100A543C2 /* AppDelegate.m in Sources */,
-				265FDA5020A6F22D00A543C2 /* DataFetcher.m in Sources */,
-				265FDA4A20A6DB4E00A543C2 /* KVCMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +370,11 @@
 			isa = PBXTargetDependency;
 			target = 265FDA1220A60F2100A543C2 /* JsonControlledLayout */;
 			targetProxy = 265FDA3720A60F2600A543C2 /* PBXContainerItemProxy */;
+		};
+		26EC0A1820A7505200004E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVCLayout;
+			targetProxy = 26EC0A1720A7505200004E8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

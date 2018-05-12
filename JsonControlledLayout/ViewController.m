@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "KVCLayoutFacade.h"
+#import <KVCLayout/KVCLayoutFacade.h>
+
 
 @interface ViewController ()
 @property (nonatomic,strong) UIButton *button;
