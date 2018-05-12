@@ -17,9 +17,15 @@
     NSDictionary * kvcDict = [dict objectForKey:@"kvc"];
     NSDictionary *frameDict = dict[@"frame"];
     NSDictionary *colorDict = dict[@"color"];
+    if (kvcDict){
     [self updateKVCValueForObject:object usingDict:kvcDict];
+    }
+    if (colorDict){
     [self updateKVCColorValueForObject:object usingDict:colorDict];
+    }
+    if (frameDict){
     [self updateKVCRectValueForObject:object usingDict:frameDict];
+    }
 }
 
 

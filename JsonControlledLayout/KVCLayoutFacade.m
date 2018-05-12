@@ -32,12 +32,13 @@
 -(void)fetchRequiredDataFromUrl:(NSString*)url WithCompletionHandler:(void (^)(void))completionHandler{
     [self.fetcher fetchResourceFromUrl:url withCompletionHandler:^(NSError *error, NSDictionary *data) {
         self.dataDictionary = data;
+        completionHandler();
     }];
     
 }
 -(void)updateKVCDataOnObject:(NSObject*)object{
     if (_dataDictionary){
-    [self.mapper updateKVCValueForObject:object usingDict:_dataDictionary];
+    [self.mapper updateKVCUsingSupportedTypeForObject:object usingDict:_dataDictionary];
     }
     
 }

@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "KVCLayoutFacade.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) UIButton *button;
+@property (nonatomic,strong) KVCLayoutFacade *layoutHelper;
 
 @end
 
@@ -35,18 +37,36 @@
                            };
     self.button = [UIButton new];
     self.button.backgroundColor = [UIColor valueForKeyPath:@"greenColor"];
+   // self.button addTa
+    [self.button addTarget:self action:@selector(update) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.button];
+    self.layoutHelper = [KVCLayoutFacade new];
+    [self update];
     
     
     
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)update{
+    [self.layoutHelper fetchRequiredDataFromUrl:@"http://192.168.1.101/data.json" WithCompletionHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.view setNeedsLayout];
+            [self viewWillLayoutSubviews];
+            [self setNeedsFocusUpdate];
+        });
+       
+       
+    }];
+    
+}
+
 -(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
     CGRect frame = CGRectMake(100, 100, 100, 100);
     
-    [self setValue: [NSValue valueWithCGRect:frame] forKeyPath:@"_button.frame"];
+   
+    [self.layoutHelper updateKVCDataOnObject:self];
    // [self setValue:@(100) forKey:@"_button.frame.origin.x"];
 }
 
