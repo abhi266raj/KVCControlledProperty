@@ -16,6 +16,8 @@
 		265FDA3020A60F2600A543C2 /* JsonControlledLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA2F20A60F2600A543C2 /* JsonControlledLayoutTests.m */; };
 		265FDA3B20A60F2600A543C2 /* JsonControlledLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA3A20A60F2600A543C2 /* JsonControlledLayoutUITests.m */; };
 		265FDA4A20A6DB4E00A543C2 /* KVCMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA4920A6DB4E00A543C2 /* KVCMapper.m */; };
+		265FDA5020A6F22D00A543C2 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA4F20A6F22D00A543C2 /* DataFetcher.m */; };
+		265FDA5320A6F60300A543C2 /* KVCLayoutFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		265FDA3C20A60F2600A543C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265FDA4820A6DB4E00A543C2 /* KVCMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCMapper.h; sourceTree = "<group>"; };
 		265FDA4920A6DB4E00A543C2 /* KVCMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCMapper.m; sourceTree = "<group>"; };
+		265FDA4E20A6F22D00A543C2 /* DataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFetcher.h; sourceTree = "<group>"; };
+		265FDA4F20A6F22D00A543C2 /* DataFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataFetcher.m; sourceTree = "<group>"; };
+		265FDA5120A6F60200A543C2 /* KVCLayoutFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCLayoutFacade.h; sourceTree = "<group>"; };
+		265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCLayoutFacade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,12 @@
 				265FDA1720A60F2100A543C2 /* AppDelegate.m */,
 				265FDA1920A60F2100A543C2 /* ViewController.h */,
 				265FDA1A20A60F2100A543C2 /* ViewController.m */,
+				265FDA5120A6F60200A543C2 /* KVCLayoutFacade.h */,
+				265FDA5220A6F60300A543C2 /* KVCLayoutFacade.m */,
 				265FDA4820A6DB4E00A543C2 /* KVCMapper.h */,
 				265FDA4920A6DB4E00A543C2 /* KVCMapper.m */,
+				265FDA4E20A6F22D00A543C2 /* DataFetcher.h */,
+				265FDA4F20A6F22D00A543C2 /* DataFetcher.m */,
 				265FDA1C20A60F2100A543C2 /* Main.storyboard */,
 				265FDA1F20A60F2600A543C2 /* Assets.xcassets */,
 				265FDA2120A60F2600A543C2 /* LaunchScreen.storyboard */,
@@ -269,7 +279,9 @@
 			files = (
 				265FDA1B20A60F2100A543C2 /* ViewController.m in Sources */,
 				265FDA2620A60F2600A543C2 /* main.m in Sources */,
+				265FDA5320A6F60300A543C2 /* KVCLayoutFacade.m in Sources */,
 				265FDA1820A60F2100A543C2 /* AppDelegate.m in Sources */,
+				265FDA5020A6F22D00A543C2 /* DataFetcher.m in Sources */,
 				265FDA4A20A6DB4E00A543C2 /* KVCMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
